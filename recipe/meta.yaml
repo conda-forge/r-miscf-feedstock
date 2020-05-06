@@ -14,7 +14,7 @@ source:
 
 build:
   merge_build_host: true  # [win]
-  number: 0
+  number: 1
   # jags not available on win
   skip: true  # [win]
   rpaths:
@@ -25,11 +25,11 @@ requirements:
   build:
     - {{ compiler('c') }}        # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
-    - {{posix}}filesystem        # [win]
-    - {{posix}}make
-    - {{posix}}sed               # [win]
-    - {{posix}}coreutils         # [win]
-    - {{posix}}zip               # [win]
+    - {{ posix }}filesystem        # [win]
+    - {{ posix }}make
+    - {{ posix }}sed               # [win]
+    - {{ posix }}coreutils         # [win]
+    - {{ posix }}zip               # [win]
   host:
     - r-base
     - r-mass >=7.3_45
@@ -38,7 +38,7 @@ requirements:
     - r-mvtnorm >=0.9_9992
   run:
     - r-base
-    - {{native}}gcc-libs         # [win]
+    - {{ native }}gcc-libs         # [win]
     - r-mass >=7.3_45
     - r-mcmcpack >=1.2_4
     - r-r2jags >=0.5_7
