@@ -3,7 +3,7 @@ About r-miscf
 
 Home: https://CRAN.R-project.org/package=miscF
 
-Package license: GPL
+Package license: GPL-2.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-miscf-feedstock/blob/master/LICENSE.txt)
 
