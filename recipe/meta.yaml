@@ -15,7 +15,7 @@ build:
   number: 4
   # jags not available on win
   # Checking windows to see if it passes. Uncomment the line if it fails.
-  # skip: true  # [win]
+  skip: true  # [win]
   rpaths:
     - lib/R/lib/
     - lib/
